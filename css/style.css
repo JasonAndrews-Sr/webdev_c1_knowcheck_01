@@ -48,12 +48,14 @@ body {
 }
 
 .hero-container {
-    display: block;
+    display: flex;
     background: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-546819.jpg&fm=jpg') center center no-repeat;
     background-size: cover;
     height: 80vh;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-content {
@@ -67,9 +69,11 @@ body {
 .aboutme-container {
     background: #29326a;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
-    padding: 48px 0;
+    flex-direction: column;
+    padding: 20px 0;
+;
 }
 
 .aboutme-content {
@@ -80,7 +84,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 12px;
+    padding: 2em;
+    margin: 1em;
+}
+
+.aboutme-container > div{
+    
+}
+
+#aboutme-desc{
+    align-items: flex-start;
+    color:#151512;
+    flex: 1;
+    
+    margin: 20px;
+    
 }
 
 .projects-container {
@@ -122,6 +140,21 @@ body {
     text-align: center;
 }
 
+.contact-container {
+    background: #1b1b27;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.contact-content {
+    font-size: 13px;
+    color: #2fa1be;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
 /* Links and Link Buttons
 ========================================================================== */
 a {
@@ -163,7 +196,7 @@ a:hover, a:active {
     border: 2px solid #f08527;
     border-radius: 12px;
     padding: 12px 24px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -178,9 +211,9 @@ a:hover, a:active {
     border: 2px solid #333333;
 }
 .hero-content .btn:hover, .hero-content .btn:active {
-    background: #333333;
+    background:  #74b44a;
     color: #F1F1F1;
-    border: 2px solid #666666;
+    border: 2px solid  #74b44a;
 }
 
 .btn, .btn:visited  {
@@ -191,7 +224,7 @@ a:hover, a:active {
     border: 2px solid #f08527;
     border-radius: 12px;
     padding: 12px 24px;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -204,6 +237,12 @@ a:hover, a:active {
     color: #F1F1F1;
     border: 2px solid #74b44a;
 }
+.btn:hover
+{
+    background-color: #74b44a;
+    border-color:  #74b44a;
+
+}
 
 
 
@@ -211,7 +250,7 @@ a:hover, a:active {
 ========================================================================== */
 
 .main-logo span {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 24px;
     font-weight: 700;
     color: #F1F1F1;
@@ -222,35 +261,54 @@ a:hover, a:active {
 
 
 .hero-content h1 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 48px;
-    color: #F1F1F1;
+    color: #151512;
+    text-shadow: 2px 2px  2px gold;
     line-height: 1;
     margin: 0 0 24px 0;
     text-transform: uppercase;
 }
 
 .hero-content p {
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Palatino Linotype', sans-serif;
     font-size: 18px;
-    color: #F1F1F1;
+    color:gold;
+    text-shadow: 2px -3px 2px #151512;
     line-height: 1.5;
 }
 
+.aboutme-content{
+    font-family: 'Palatino Linotype', sans-serif;
+    flex: 1;
+}
+
+.contact-content{
+    font-family: 'Palatino Linotype', sans-serif;
+    color:#F1F1F1;
+    
+}
+
+.contact-content h3 {
+    color: #2fa1be;
+}
+
 section h2 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 48px;
     text-transform: uppercase;
+    color: #2fa1be;
+    text-shadow: 3px -3px 2px #151512;
 }
 
 section h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 24px;
     text-transform: uppercase;
 }
 
 section h4 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Palatino Linotype Condensed', sans-serif;
     font-size: 18px;
 }
 
@@ -286,7 +344,7 @@ footer {
 
 .aboutme-photo {
     width: 100%;
-    max-width: 320px;
+    max-width: 600px;
 }
 
 
